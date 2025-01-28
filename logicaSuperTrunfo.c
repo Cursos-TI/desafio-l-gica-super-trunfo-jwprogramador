@@ -22,7 +22,7 @@ int main() {
     printf("CARTA01: \n");
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &cidade1);
+    scanf("%s", cidade1);
 
     printf("Digite o numero de habitante da cidade: \n");
     scanf("%d", &populacao1);
@@ -78,7 +78,7 @@ int main() {
     printf("CARTA02: \n");
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
 
     printf("Digite o numero de habitante da cidade: \n");
     scanf("%d", &populacao2);
@@ -120,7 +120,7 @@ int main() {
 //-------------------------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------------------------
     // comparação entre as propriedades 
-    float escolha;
+    int escolha;
 
     printf("Comparação das cartas \n");
     printf("Escolha a propriedade da Carta a ser comparada \n");
@@ -131,7 +131,7 @@ int main() {
     printf("5. Densidade populacional\n");
     printf("6. PIB per capita\n");
     printf("Escolha! \n");
-    scanf("%f", &escolha);  
+    scanf("%d", &escolha);  
 
     switch (escolha){
     case 1:
