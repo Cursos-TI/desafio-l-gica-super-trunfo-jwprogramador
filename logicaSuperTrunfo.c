@@ -137,9 +137,12 @@ int main() {
     printf("Primeira Escolha! \n");
     scanf("%d", &escolha1);  
     
+
     //Segunda escolha 
     printf("Segunda Escolha! \n");
     scanf("%d", &escolha2);  
+
+
 
   if (escolha1 == escolha2) {
   printf("Segunda Escolha igual a primeira! Escolha outra propriedade \n");
@@ -204,7 +207,8 @@ int main() {
       }
       break; 
     default:
-    printf("Opção Invalida!\n");
+    comparacao1 = 2;
+    printf("Primeira escolha, Opção Invalida!\n");
       break; 
     }
 
@@ -266,19 +270,24 @@ int main() {
       }
       break; 
     default:
-    printf("Opção Invalida!\n");
+    comparacao2 = 2;
+    printf("Segunda escolha, Opção Invalida!\n");
       break; 
     }
    
 
-if (comparacao1 == 1 && comparacao2 == 1) {
+
+
+if ((comparacao1 == 1 && comparacao2 == 0) || (comparacao1 == 1 && comparacao2 == 2)) {
   printf("Vencedor carta01!\n");
 } else if ((comparacao1 == 1 && comparacao2 == 0) || (comparacao1 == 0 && comparacao2 == 1))  {
  printf("Empatou!\n");
-} else {
-  printf("Vencedor carta02!\n");
+} else if ((comparacao1 == 0 && comparacao2 == 0) || (comparacao1 == 2 && comparacao2 == 0)) {
+ printf("Vencedor carta02!\n");
+} else  {
+   printf("Opções invalidas\n");
 }
-
+ 
 
     return 0;
 }
